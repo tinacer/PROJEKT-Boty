@@ -6,46 +6,61 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Boty</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
 	<!-- levá (zelená) polovina -->
-		<img src="images/nike.svg" alt="logo Nike" width="65" height="24">
+	<div class="container">
 
-		<p>
-			Zrychli tempo,<br>
-			soustřeď se na rychlost!
-		</p>
+		<section class="left half">
 
-		<img src="images/bota.png" alt="fotografie Nike Air Zoom Pegasus 33" width="415" height="295">
+			<img class="nike-logo" src="images/nike.svg" alt="logo Nike" width="65" height="24">
 
-		<div>2450&nbsp;Kč</div>
-		<div>Prodloužená záruka 3 roky</div>
+			<p>
+				Zrychli tempo,<br>
+				soustřeď se na rychlost!
+			</p>
+
+			<img class="nike-shoe" src="images/bota.png" alt="fotografie Nike Air Zoom Pegasus 33" width="415" height="295">
+			<div class="price">2450&nbsp;Kč</div>
+			<div class="warranty ">Prodloužená záruka 3 roky</div>
+		</section>
 	<!-- konec levé poloviny -->
 
 
 	<!-- pravá (bílá) polovina -->
-		<h1>Nike Air Zoom Pegasus 33</h1>
+		<section class="right half">
+			<h1 class="header-name">Nike Air Zoom Pegasus 33</h1>
 
-		<p>Dámská běžecká bota</p>
+			<p class="shoes-type">Dámská běžecká bota</p>
 
-		<p>
-			Nike Air Zoom Pegasus 33 dokonale padne, dodá pocit rychlosti a má pružné tlumení, které ti umožní zrychlit tempo a soustředit se na rychlost.
-		</p>
+			<p class="description">
+				Nike Air Zoom Pegasus 33 dokonale padne, dodá pocit rychlosti a má pružné tlumení, které ti umožní zrychlit tempo a soustředit se na rychlost.
+			</p>
 
-		<h2>Velikost</h2>
+			<hr color="#06d7c1">
 
-		<ul>
-			<li>35</li>
-			<li>36</li>
-			<li>37</li>
-			<li>38</li><!-- tato velikost bude zvýrazněná jako vybraná -->
-			<li>39</li>
-			<li>40</li>
-		</ul>
+			<h2>Velikost</h2>
 
-		<a href="#">Do košíku</a>
+			<nav>
+				<ul class="size-selection">
+					<li class="size-column">35</li>
+					<li class="size-column">36</li>
+					<li class="size-column">37</li>
+					<li class="size-column selected">38</li><!-- tato velikost bude zvýrazněná jako vybraná -->
+					<li class="size-column">39</li>
+					<li class="size-column">40</li>
+				</ul>
+			</nav>
+
+			<nav>
+				<a class="buy-button" href="#">Do košíku</a>
+			</nav>
+		</section>
 	<!-- konec pravé poloviny -->
+	</div>
+
 
 </body>
 </html>

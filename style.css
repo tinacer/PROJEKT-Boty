@@ -2,10 +2,6 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
-body {
-    text-rendering: optimizeLegibility;
-}
-
 /*
  BARVY
  svetle sede pozadi      #f5f5f5
@@ -21,3 +17,110 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+body {
+    text-rendering: optimizeLegibility;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 150px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 440px;
+}
+
+.left {
+    position: relative;
+    flex-basis: 335px;
+    flex-shrink: 0;
+    background-image: linear-gradient(#06d7c1, #50cc49);
+    color: whitesmoke;
+    border-radius: 10px 0 0 10px;   
+}
+
+.right {
+    flex-basis: 335px;
+    flex-shrink: 0;
+    border-radius: 0px 10px 10px 0;
+    color: rgb(22, 2, 16);
+    padding: 30px;
+    box-shadow: 0 3px 10px #959595;
+}
+
+.left p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px 0 0 30px;
+}
+
+.nike-logo {
+    margin: 30px 0 0 30px;
+}
+
+.nike-shoe {
+    position: absolute;
+    right: 3.5px;
+}
+
+.price {
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.warranty {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.header-name {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.shoes-type {
+    color: #959595;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+hr {
+    margin: 30px 0;
+}
+
+.size-selection {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.selected {
+    color: #f15f42; 
+    border: 1px solid #f15f42;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.buy-button {
+    display: inline-block;
+    color: whitesmoke;
+    background-color: #f15f42;
+    margin-top: 30px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+}
